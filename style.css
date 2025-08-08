@@ -6,7 +6,14 @@ a{
 body {
     margin: 0;
 }
-
+header {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 img.logo {
     margin-left: 40px;
     margin-right: 92px;
@@ -23,13 +30,14 @@ a.como {
 }
 a.login {
     border: 1.5px solid #B7B3B3;
+    margin-bottom: 12px;
+    margin-top: 23px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 24px;
     padding-right: 24px;
     background: #FFF;
     color: #000;
-    margin-top: 35px;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -37,14 +45,16 @@ a.login {
     margin-right: 14px;
 }
 a.registro {
-    margin-top: 35px;
+    margin-bottom:12px;
+    margin-top:23px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 18px;
+    padding-right: 18px;
+
     border: 1.5px solid #B7B3B3;
     background: #6C63FF;
     color: #FFF;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
 }
 a.links {
     margin-top: 35px;
@@ -54,12 +64,6 @@ a.links {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-header {
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 .botao {
     
@@ -89,8 +93,9 @@ header {
 }
 .easier {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin: auto;
+    max-width: 100%;
     padding: 50px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -111,12 +116,17 @@ header {
     margin-bottom: 56px;
 }
 .imagem {
-    margin-left: 100pz;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-left: 200px;
+    
 }
 .works {
     font-family: "Montserrat", sans-serif;
     text-align: center;
     padding: 50px 20px;
+    margin-bottom: 100px;
 
 }
 .descricao {
@@ -131,13 +141,12 @@ header {
 .currency {
     font-family: "Montserrat", sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 299px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 250px;
 }
 .texto-currency {
-    position: relative;
-    margin-right: 170px;
+    margin-left: 380px;
 }
 .texto-currency h1{
     color: #000;
@@ -164,9 +173,6 @@ header {
     line-height: normal;
     letter-spacing: 1.32px;
 }
-.figura {
-    margin: -70px;
-}
 .descricao-services {
     max-width: 2;
 }
@@ -176,7 +182,22 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("Group 13.png");
+    background-image: url("imagens/Group 13.png");
+    background-repeat: no-repeat;
+    background-size: 1066px 820px;
+    background-position: center;
+    margin-bottom: 200px;
+
+}
+.ti {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    gap: 1rem;
+}
+.ti h1{
+    display: inline-block;
+    flex-shrink: 0;
 }
 .coluna1, .coluna2 {
     display: flex;
@@ -211,11 +232,11 @@ header {
 }
 .relatos {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 50px;
     height: 442px;
     background-size: cover;
-    background-image: url("fundo.png");
+    background-image: url("imagens/fundo.png");
     font-family: "Montserrat", sans-serif;
     background-color: #6C63FF;
     margin-bottom: 75px;
@@ -227,6 +248,7 @@ header {
     display: flex;
     gap: 1rem;
     overflow: scroll;
+    margin-left: 150px;
 }
 
 .relatos h3 {
@@ -247,7 +269,7 @@ header {
     line-height: normal;
 }
 .people {
-    margin-left: 150px;
+    margin-right: 250px;
 }
 .people .seta {
     text-decoration: none;
@@ -261,11 +283,8 @@ header {
     background-color: #FFF;
     border-radius: 15px;
     color: #000;
-    
     height: 300px;
     padding: 25px;
-    
-
 }
 .relato p {
     max-width: 300px;
@@ -273,7 +292,6 @@ header {
 
 .citacao {
     color: #000;
-
     font-size: 20px;
     font-style: italic;
     font-weight: 500;
@@ -312,6 +330,7 @@ footer {
     display: flex;
     align-items: flex-start;
     font-family: 'Montserrat', sans-serif;
+    justify-content: center;
     margin-bottom: 50px;
 }
 .primeiracoluna {
